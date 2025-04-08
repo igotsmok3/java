@@ -7,6 +7,12 @@ public class Student implements Comparable<Student> {
     public Student() {
     }
 
+    public Student(String s) {
+        String[] arr = s.split(",");
+        this.name = arr[0];
+        this.age = Integer.parseInt(arr[1]);
+    }
+
     public Student(String name, Integer age) {
         this.name = name;
         this.age = age;
